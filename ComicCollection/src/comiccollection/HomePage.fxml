@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language JavaScript?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx" fx:controller="comiccollection.FXMLDocumentController">
+    <children>
+        <Button fx:id="searchButton" layoutX="361.0" layoutY="59.0" onAction="#searchButtonAction" text="Search" />
+        <TextField layoutX="100.0" layoutY="59.0" prefWidth="260.0" />
+        <Label layoutX="100.0" layoutY="6.0" text="Comic Collection">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Label>
+        <Button fx:id="marvelButton" disable="false" layoutX="100.0" layoutY="116.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelButtonAction" prefHeight="64.0" prefWidth="106.0">
+            <graphic>
+                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+                    <Image url="@marvel-comics-logo.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="dcButton" disable="false" layoutX="311.0" layoutY="116.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#dcButtonAction" prefHeight="64.0" prefWidth="106.0">
+            <graphic>
+                <ImageView fitHeight="60.0" fitWidth="56.0" pickOnBounds="true">
+                    <Image url="@dc-comics-logo.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,1 @@
+JavaFX application that is a comic collection application
