@@ -7,50 +7,50 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx" fx:controller="comiccollection.FXMLDocumentController">
-    <children>
-        <Button fx:id="spidermanButton" disable="false" layoutX="82.0" layoutY="35.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#spidermanButtonAction" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@spider-man-logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="captainAmericaButton" disable="false" layoutX="408.0" layoutY="35.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@captain-america-logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="ironManButton" disable="false" layoutX="82.0" layoutY="136.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@iron-man-logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="fantasticFourButton" disable="false" layoutX="408.0" layoutY="136.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@fantastic_four_logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="hulkButton" disable="false" layoutX="82.0" layoutY="241.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@hulk_logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="moonKnightButton" disable="false" layoutX="408.0" layoutY="241.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@moon_knight_logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button layoutX="272.0" layoutY="350.0" mnemonicParsing="false" onAction="#openPreviousPage" text="Back" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="comiccollection.FXMLDocumentController">
+  <children>
+    <Button fx:id="spidermanButton" disable="false" layoutX="82.0" layoutY="35.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#spidermanButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@spider-man_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="captainAmericaButton" disable="false" layoutX="408.0" layoutY="35.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@captain_america_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="ironManButton" disable="false" layoutX="82.0" layoutY="136.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@iron_man_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="fantasticFourButton" disable="false" layoutX="408.0" layoutY="136.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@fantastic_four_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="hulkButton" disable="false" layoutX="82.0" layoutY="241.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@hulk_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="moonKnightButton" disable="false" layoutX="408.0" layoutY="241.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@moon_knight_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button layoutX="272.0" layoutY="350.0" mnemonicParsing="false" onAction="#openPreviousPage" text="Back" />
+  </children>
 </AnchorPane>

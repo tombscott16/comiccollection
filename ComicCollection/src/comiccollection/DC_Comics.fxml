@@ -7,50 +7,81 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/" xmlns="http://javafx.com/javafx" fx:controller="comiccollection.FXMLDocumentController">
-    <children>
-        <Button fx:id="supermanButton" disable="false" layoutX="100.0" layoutY="84.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@superman-logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="batmanButton" disable="false" layoutX="370.0" layoutY="84.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@batman-logo.gif" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="flashButton" disable="false" layoutX="100.0" layoutY="168.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@flash-logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="wonderWomanButton" disable="false" layoutX="370.0" layoutY="168.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@wonder-woman-logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="greenLanternButton" disable="false" layoutX="100.0" layoutY="256.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@green_lantern_logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="aquamanButton" disable="false" layoutX="370.0" layoutY="256.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
-            <graphic>
-                <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@aquaman-logo.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button layoutX="272.0" layoutY="350.0" mnemonicParsing="false" onAction="#openPreviousPage" text="Back" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="comiccollection.FXMLDocumentController">
+  <children>
+    <ImageView fitHeight="117.0" fitWidth="95.0" layoutX="253.0" layoutY="14.0" pickOnBounds="true">
+      <Image url="@dc_comics_logo.png" />
+    </ImageView>
+    <Button fx:id="supermanButton" disable="false" layoutX="14.0" layoutY="131.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@superman_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="batmanButton" disable="false" layoutX="131.0" layoutY="269.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@batman_logo.gif" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="flashButton" disable="false" layoutX="14.0" layoutY="200.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@flash_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="wonderWomanButton" disable="false" layoutX="131.0" layoutY="131.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" smooth="true">
+          <Image url="@wonder_woman_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="greenLanternButton" disable="false" layoutX="14.0" layoutY="269.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@green_lantern_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="aquamanButton" disable="false" layoutX="131.0" layoutY="200.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@aquaman_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="martianManhunterButton" disable="false" layoutX="247.0" layoutY="131.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" smooth="true">
+          <Image url="@martian_manhunter_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="hawkgirlButton" disable="false" layoutX="247.0" layoutY="200.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" smooth="true">
+          <Image url="@hawkgirl_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="greenArrowButton" disable="false" layoutX="247.0" layoutY="269.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" smooth="true">
+          <Image url="@green_arrow_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button layoutX="278.0" layoutY="365.0" mnemonicParsing="false" onAction="#openPreviousPage" text="Back" />
+    <Button fx:id="cyborgButton" disable="false" layoutX="362.0" layoutY="131.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" smooth="true">
+          <Image url="@cyborg_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+  </children>
 </AnchorPane>
