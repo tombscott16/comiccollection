@@ -21,12 +21,20 @@ public class FXMLDocumentController implements Initializable {
     private Button dcButton;
     @FXML
     private Button searchButton;
+    @FXML
+    private Button importButton;
 
     @FXML
     private void searchButtonAction(ActionEvent event) {
         System.out.println("Search");
     }
 
+    @FXML
+    private void importButtonAction(ActionEvent event) throws IOException {
+        comicCollection.importFile(event);
+        closeCurrentPage(event);
+    }
+    
     @FXML
     public void marvelButtonAction(ActionEvent event) throws IOException {
         closeCurrentPage(event);

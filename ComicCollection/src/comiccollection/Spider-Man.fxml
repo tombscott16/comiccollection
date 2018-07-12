@@ -12,10 +12,14 @@
     <Button layoutX="278.0" layoutY="350.0" mnemonicParsing="false" onAction="#openPreviousPage" text="Back" />
     <TableView fx:id="seriesNameTable" layoutX="14.0" layoutY="100.0" onMouseClicked="#handleMouseClick" prefHeight="200.0" prefWidth="200.0">
       <columns>
-        <TableColumn fx:id="seriesName" maxWidth="5000.0" minWidth="10.0" prefWidth="198.0" text="Series Name:" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="198.0" text="Series Name:" fx:id="seriesName" />
       </columns>
     </TableView>
-    <ListView fx:id="volNumList" layoutX="224.0" layoutY="100.0" prefHeight="200.0" prefWidth="152.0" />
+    <TableView fx:id="volNumTable" layoutX="228.0" layoutY="100.0" onMouseClicked="#handleMouseClick" prefHeight="200.0" prefWidth="144.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="142.0" text="Volumes:" fx:id="volNum" />
+      </columns>
+    </TableView>
     <ListView fx:id="list" layoutX="386.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
   </children>
 </AnchorPane>
