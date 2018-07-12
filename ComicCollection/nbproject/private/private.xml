@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ypf5bbh/Documents/NetBeansProjects/ComicCollection/src/comiccollection/Spider_Man.fxml</file>
-            <file>file:/C:/Users/ypf5bbh/Documents/NetBeansProjects/ComicCollection/src/comiccollection/DC_Comics.fxml</file>
-            <file>file:/C:/Users/ypf5bbh/Documents/NetBeansProjects/ComicCollection/src/comiccollection/Marvel_Comics.fxml</file>
-            <file>file:/C:/Users/ypf5bbh/Documents/NetBeansProjects/ComicCollection/src/comiccollection/FXMLDocumentController.java</file>
-            <file>file:/C:/Users/ypf5bbh/Documents/NetBeansProjects/ComicCollection/src/comiccollection/ComicCollection.java</file>
-            <file>file:/C:/Users/ypf5bbh/Documents/NetBeansProjects/ComicCollection/src/comiccollection/Superman.fxml</file>
+            <file>file:/C:/Users/ypf5bbh/Documents/Comic%20Collection/comiccollection/ComicCollection/src/comiccollection/FXMLDocumentController.java</file>
+            <file>file:/C:/Users/ypf5bbh/Documents/Comic%20Collection/comiccollection/ComicCollection/src/comiccollection/Spider-Man.fxml</file>
+            <file>file:/C:/Users/ypf5bbh/Documents/Comic%20Collection/comiccollection/ComicCollection/src/comiccollection/Marvel_Comics.fxml</file>
+            <file>file:/C:/Users/ypf5bbh/Documents/Comic%20Collection/comiccollection/ComicCollection/src/comiccollection/SpidermanController.java</file>
+            <file>file:/C:/Users/ypf5bbh/Documents/Comic%20Collection/comiccollection/ComicCollection/src/comiccollection/DC_Comics.fxml</file>
+            <file>file:/C:/Users/ypf5bbh/Documents/Comic%20Collection/comiccollection/ComicCollection/src/comiccollection/ComicCollection.java</file>
+            <file>file:/C:/Users/ypf5bbh/Documents/Comic%20Collection/comiccollection/ComicCollection/src/comiccollection/ComicBook.java</file>
         </group>
     </open-files>
 </project-private>

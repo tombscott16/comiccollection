@@ -10,7 +10,11 @@
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="comiccollection.SpidermanController">
   <children>
     <Button layoutX="278.0" layoutY="350.0" mnemonicParsing="false" onAction="#openPreviousPage" text="Back" />
-    <ListView fx:id="seriesNameList" onMouseClicked="#handleMouseClick" layoutX="14.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+    <TableView fx:id="seriesNameTable" layoutX="14.0" layoutY="100.0" onMouseClicked="#handleMouseClick" prefHeight="200.0" prefWidth="200.0">
+      <columns>
+        <TableColumn fx:id="seriesName" maxWidth="5000.0" minWidth="10.0" prefWidth="198.0" text="Series Name:" />
+      </columns>
+    </TableView>
     <ListView fx:id="volNumList" layoutX="224.0" layoutY="100.0" prefHeight="200.0" prefWidth="152.0" />
     <ListView fx:id="list" layoutX="386.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
   </children>

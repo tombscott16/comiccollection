@@ -9,17 +9,22 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
 
 public class SpidermanController implements Initializable{
     @FXML
-    private ListView<String> seriesNameList = new ListView<String>();
+    private TableView<String> seriesNameTable = new TableView<String>();
     private ObservableList<String> seriesNameItems = FXCollections.observableArrayList();
+    
+    @FXML
+    private TableColumn seriesName = new TableColumn("Series Name:");
     @FXML
     private ListView<String> volNumList = new ListView<String>();
     private ObservableList<String> volNumItems = FXCollections.observableArrayList();
     @FXML
-    private ListView<String> issueNumList = new ListView<String>();
+    private TableView<String> issueNumList = new TableView<String>();
     private ObservableList<String> issueNumItems = FXCollections.observableArrayList();
     @FXML
     private FXMLDocumentController homeController = new FXMLDocumentController();
@@ -31,18 +36,9 @@ public class SpidermanController implements Initializable{
     
     @FXML
     public void handleMouseClick(MouseEvent event) throws IOException {
-        System.out.println(seriesNameList.getSelectionModel().getSelectedItem());
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        seriesNameList.setItems(seriesNameItems);
-        seriesNameItems.add("The Amazing Spider-Man");
-        seriesNameItems.add("Spider-Man");
-        seriesNameItems.add("Spider-Man/Deadpool");
-        seriesNameItems.add("Peter Parker: The Spectacular Spider-Man");
-        seriesNameItems.add("The Spectacular Spider-Man");
-        seriesNameItems.add("Web of Spider-Man");
-        seriesNameItems.add("Ultimate Spider-Man");
     }
 }
