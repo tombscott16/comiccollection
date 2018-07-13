@@ -16,4 +16,15 @@ public class Spiderman extends ComicCollection {
 
         return seriesNames;
     }
+    
+    public int getVolumes(String seriesName) {
+        
+        int volumes = 0;
+        for (ComicBookSeries comicBookSerie : comicBookSeries) {
+            if (seriesName.contains(comicBookSerie.getSeriesName())) {
+                volumes = Integer.parseInt(comicBookSerie.getVolumes());
+            }
+        }        
+        return volumes;
+    }
 }
