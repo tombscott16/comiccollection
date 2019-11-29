@@ -48,9 +48,19 @@ public class FXMLDocumentController implements Initializable {
     }
 
     @FXML
-    public void spidermanButtonAction(ActionEvent event) throws IOException {
+    public void marvelCharacterButtonAction(ActionEvent event) throws IOException {
+        Button characterButton = (Button) event.getSource();
+        String buttonId = characterButton.getId();
         closeCurrentPage(event);
-        comicCollection.switchScene("Spider-Man.fxml", "Marvel_Comics.fxml");
+        comicCollection.switchScene(buttonId + ".fxml", "Marvel_Comics.fxml");
+    }
+
+    @FXML
+    public void dcCharacterButtonAction(ActionEvent event) throws IOException {
+        Button characterButton = (Button) event.getSource();
+        String buttonId = characterButton.getId();
+        closeCurrentPage(event);
+        comicCollection.switchScene(buttonId + ".fxml", "DC_Comics.fxml");
     }
 
     @FXML

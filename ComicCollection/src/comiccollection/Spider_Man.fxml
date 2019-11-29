@@ -2,16 +2,16 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1"
-            xmlns="http://javafx.com/javafx/2.2" fx:controller="comiccollection.SupermanController">
+            xmlns="http://javafx.com/javafx/2.2" fx:controller="comiccollection.SpidermanController">
     <children>
         <Label layoutX="250.0">
             <graphic>
                 <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-                    <Image url="@logos/superman_logo.png"/>
+                    <Image url="@logos/spider-man_logo.png"/>
                 </ImageView>
             </graphic>
         </Label>

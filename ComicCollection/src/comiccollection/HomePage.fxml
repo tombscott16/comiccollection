@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?language JavaScript?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
@@ -21,14 +18,14 @@
     <Button fx:id="marvelButton" disable="false" layoutX="100.0" layoutY="116.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelButtonAction" prefHeight="64.0" prefWidth="106.0">
       <graphic>
         <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
-          <Image url="@marvel_comics_logo.png" />
+          <Image url="@logos/marvel_comics_logo.png" />
         </ImageView>
       </graphic>
     </Button>
     <Button fx:id="dcButton" disable="false" layoutX="311.0" layoutY="116.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#dcButtonAction" prefHeight="64.0" prefWidth="106.0">
       <graphic>
         <ImageView fitHeight="60.0" fitWidth="56.0" pickOnBounds="true">
-          <Image url="@dc_comics_logo.png" />
+          <Image url="@logos/dc_comics_logo.png" />
         </ImageView>
       </graphic>
     </Button>
