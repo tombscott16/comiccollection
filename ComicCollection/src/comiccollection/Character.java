@@ -21,7 +21,7 @@ public class Character extends ComicCollection {
         
         int volumes = 0;
         for (ComicBookSeries comicBookSeries : comicBookSeries) {
-            if (seriesName.contains(comicBookSeries.getSeriesName())) {
+            if (seriesName.equals(comicBookSeries.getSeriesName())) {
                 volumes = Integer.parseInt(comicBookSeries.getVolumes());
             }
         }        

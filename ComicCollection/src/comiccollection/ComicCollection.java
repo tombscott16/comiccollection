@@ -23,6 +23,7 @@ public class ComicCollection extends Application {
 
     public static String location;
     public static List<ComicBookSeries> comicBookSeries = new ArrayList<>();
+    public static String characterName;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -118,5 +119,13 @@ public class ComicCollection extends Application {
 
     public static void setLocation(String location) {
         ComicCollection.location = location;
+    }
+
+    public static String getCharacterName() {
+        return characterName;
+    }
+
+    public static void setCharacterName(String characterName) {
+        ComicCollection.characterName = characterName;
     }
 }

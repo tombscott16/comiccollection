@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 public class FXMLDocumentController implements Initializable {
 
     ComicCollection comicCollection = new ComicCollection();
+
     public Boolean dcOpen = false;
     public Boolean marvelOpen = false;
     @FXML
@@ -52,7 +53,8 @@ public class FXMLDocumentController implements Initializable {
         Button characterButton = (Button) event.getSource();
         String buttonId = characterButton.getId();
         closeCurrentPage(event);
-        comicCollection.switchScene(buttonId + ".fxml", "Marvel_Comics.fxml");
+        checkCharacterName(buttonId);
+        comicCollection.switchScene("character_pages/" + buttonId + ".fxml", "Marvel_Comics.fxml");
     }
 
     @FXML
@@ -60,7 +62,8 @@ public class FXMLDocumentController implements Initializable {
         Button characterButton = (Button) event.getSource();
         String buttonId = characterButton.getId();
         closeCurrentPage(event);
-        comicCollection.switchScene(buttonId + ".fxml", "DC_Comics.fxml");
+        checkCharacterName(buttonId);
+        comicCollection.switchScene("character_pages/" + buttonId + ".fxml", "DC_Comics.fxml");
     }
 
     @FXML
@@ -74,6 +77,20 @@ public class FXMLDocumentController implements Initializable {
         Node source = (Node) event.getSource();
         Stage stage = (Stage) source.getScene().getWindow();
         stage.close();
+    }
+
+    public void checkCharacterName(String characterName) {
+        switch (characterName) {
+            case "Spider_Man":
+                comicCollection.setCharacterName("Spider-Man");
+                break;
+            case "Iron_Man":
+                comicCollection.setCharacterName("Iron Man");
+                break;
+            default:
+                comicCollection.setCharacterName(characterName);
+                break;
+        }
     }
 
     @Override

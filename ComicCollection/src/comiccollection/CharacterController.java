@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 
-public class SpidermanController implements Initializable{    
+public class CharacterController implements Initializable{
     @FXML
     private ListView<String> seriesNameList = new ListView<>();
     public ObservableList<String> seriesNameItems = FXCollections.observableArrayList();
@@ -25,7 +25,8 @@ public class SpidermanController implements Initializable{
     private ObservableList<String> issueNumItems = FXCollections.observableArrayList();
     
     private FXMLDocumentController homeController = new FXMLDocumentController();
-    private Character spiderman = new Character();
+    private Character character = new Character();
+    private ComicCollection comicCollection = new ComicCollection();
 
     @FXML
     public void openPreviousPage(ActionEvent event) throws IOException {
@@ -34,8 +35,9 @@ public class SpidermanController implements Initializable{
     
     @FXML
     public void getIssues() {
-        String issues = spiderman.getIssues(seriesNameList.getSelectionModel().getSelectedItem(), volNumList.getSelectionModel().getSelectedItem());
+        String issues = character.getIssues(seriesNameList.getSelectionModel().getSelectedItem(), volNumList.getSelectionModel().getSelectedItem());
         issueNumItems.clear();
+        issueNumList.getItems().clear();
 
         String[] issueRange = issues.split(Pattern.quote("|"));
         for (String ranges: issueRange) {
@@ -54,9 +56,10 @@ public class SpidermanController implements Initializable{
     }
     
     @FXML
-    public void getVolumes(MouseEvent event) {
-        int volumes = spiderman.getVolumes(event.toString());
+    public void getVolumes() {
+        int volumes = character.getVolumes(seriesNameList.getSelectionModel().getSelectedItem());
         volNumItems.clear();
+        volNumList.getItems().clear();
         issueNumList.getItems().clear();
         
         for (Integer j = 1; j <= volumes; j++) {
@@ -65,10 +68,11 @@ public class SpidermanController implements Initializable{
         
         volNumList.getItems().setAll(volNumItems);
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        seriesNameItems.addAll(spiderman.getSeries("Spider-Man"));
+
+        seriesNameItems.addAll(character.getSeries(comicCollection.getCharacterName()));
         
         seriesNameList.getItems().setAll(seriesNameItems);
     }
