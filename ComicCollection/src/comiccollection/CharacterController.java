@@ -44,8 +44,12 @@ public class CharacterController implements Initializable{
             if (ranges.contains("-")) {
                 String firstIssue = ranges.split("-")[0];
                 String lastIssue = ranges.split("-")[1];
-                for (Integer j = Integer.parseInt(firstIssue); j <= Integer.parseInt(lastIssue); j++) {
-                    issueNumItems.add(j.toString());
+                if (firstIssue.length() == 0) {
+                    issueNumItems.add(ranges);
+                } else {
+                    for (Integer j = Integer.parseInt(firstIssue); j <= Integer.parseInt(lastIssue); j++) {
+                        issueNumItems.add(j.toString());
+                    }
                 }
             } else {
                 issueNumItems.add(ranges);

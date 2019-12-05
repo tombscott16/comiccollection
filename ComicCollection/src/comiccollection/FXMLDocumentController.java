@@ -108,6 +108,9 @@ public class FXMLDocumentController implements Initializable {
             case "Spider_Man":
                 comicCollection.setCharacterName("Spider-Man");
                 break;
+            case "Teen_Titans":
+                comicCollection.setCharacterName("Teen Titans");
+                break;
             case "X_Men":
                 comicCollection.setCharacterName("X-Men");
                 break;
