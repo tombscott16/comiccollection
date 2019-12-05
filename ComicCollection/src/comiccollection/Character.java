@@ -17,14 +17,14 @@ public class Character extends ComicCollection {
         return seriesNames;
     }
     
-    public int getVolumes(String seriesName) {
+    public String getVolumes(String seriesName) {
         
-        int volumes = 0;
+        String volumes = "";
         for (ComicBookSeries comicBookSeries : comicBookSeries) {
             if (seriesName.equals(comicBookSeries.getSeriesName())) {
-                volumes = Integer.parseInt(comicBookSeries.getVolumes());
+                volumes = comicBookSeries.getVolumes();
             }
-        }        
+        }
         return volumes;
     }
 

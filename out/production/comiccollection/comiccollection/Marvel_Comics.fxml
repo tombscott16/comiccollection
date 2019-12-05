@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="comiccollection.FXMLDocumentController">
+  <children>
+    <ImageView fitHeight="98.0" fitWidth="137.0" layoutX="232.0" layoutY="14.0" pickOnBounds="true">
+      <Image url="@logos/marvel_comics_logo.png" />
+    </ImageView>
+    <Button fx:id="Spider_Man" disable="false" layoutX="14.0" layoutY="119.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/spider-man_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Moon_Knight" disable="false" layoutX="247.0" layoutY="294.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/moon_knight_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Black_Panther" disable="false" layoutX="480.0" layoutY="119.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/black-panther-logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="X_Men" disable="false" layoutX="364.0" layoutY="207.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/x-men_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Ant_Man" disable="false" layoutX="247.0" layoutY="119.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/ant-man_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Iron_Man" disable="false" layoutX="130.5" layoutY="119.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/iron_man_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Captain_America" disable="false" layoutX="480.0" layoutY="207.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/captain_america_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Fantastic_Four" disable="false" layoutX="247.0" layoutY="207.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/fantastic_four_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Hulk" disable="false" layoutX="14.0" layoutY="206.5" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/hulk_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button layoutX="278.0" layoutY="365.0" mnemonicParsing="false" onAction="#openPreviousPage" text="Back" />
+    <Button fx:id="Thor" disable="false" layoutX="14.0" layoutY="294.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/thor_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Captain_Marvel" disable="false" layoutX="131.0" layoutY="207.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/captain_marvel_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Avengers" disable="false" layoutX="363.5" layoutY="119.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/avengers_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button id="Deadpool" disable="false" layoutX="131.0" layoutY="294.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/deadpool_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button id="Daredevil" disable="false" layoutX="364.0" layoutY="294.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/daredevil_logo.png" />
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button id="Doctor_Strange" disable="false" layoutX="480.0" layoutY="294.0" minHeight="64.0" minWidth="106.0" mnemonicParsing="false" onAction="#marvelCharacterButtonAction" prefHeight="64.0" prefWidth="106.0">
+      <graphic>
+        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true">
+          <Image url="@logos/doctor_strange_logo.gif" />
+        </ImageView>
+      </graphic>
+    </Button>
+  </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="comiccollection.FXMLDocumentController">
+  <Button layoutX="272.0" layoutY="190.0" mnemonicParsing="false" onAction="#importButtonAction" text="Import" />
+  <Label layoutX="44.0" layoutY="54.0" text="Select Your Excel Sheet to Import">
+    <font>
+      <Font size="35.0" />
+    </font>
+  </Label>
+</AnchorPane>

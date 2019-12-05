@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/2.2" fx:controller="comiccollection.CharacterController">
+    <children>
+        <Label layoutX="225.0">
+            <graphic>
+                <ImageView fitHeight="75.0" fitWidth="115.0" pickOnBounds="true">
+                    <Image url="@../logos/green_arrow_logo.png"/>
+                </ImageView>
+            </graphic>
+        </Label>
+        <Button layoutX="278.0" layoutY="350.0" mnemonicParsing="false" onAction="#openPreviousPage" text="Back"/>
+        <Label layoutX="14.0" layoutY="85.0">Series</Label>
+        <ListView fx:id="seriesNameList" layoutX="14.0" layoutY="100.0" onMouseClicked="#getVolumes" prefHeight="200.0"
+                  prefWidth="200.0"/>
+        <Label layoutX="228.0" layoutY="85.0">Volume</Label>
+        <ListView fx:id="volNumList" layoutX="228.0" layoutY="100.0" onMouseClicked="#getIssues" prefHeight="200.0"
+                  prefWidth="144.0"/>
+        <Label layoutX="386.0" layoutY="85.0">Issue</Label>
+        <ListView fx:id="issueNumList" layoutX="386.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0"/>
+    </children>
+</AnchorPane>

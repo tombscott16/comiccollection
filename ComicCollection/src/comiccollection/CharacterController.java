@@ -57,15 +57,23 @@ public class CharacterController implements Initializable{
     
     @FXML
     public void getVolumes() {
-        int volumes = character.getVolumes(seriesNameList.getSelectionModel().getSelectedItem());
+        String volumes = character.getVolumes(seriesNameList.getSelectionModel().getSelectedItem());
         volNumItems.clear();
         volNumList.getItems().clear();
         issueNumList.getItems().clear();
-        
-        for (Integer j = 1; j <= volumes; j++) {
-            volNumItems.add(j.toString());
+        String[] volumeRange = volumes.split(";");
+        for(String range: volumeRange) {
+            if (range.contains("-")) {
+                String firstIssue = range.split("-")[0];
+                String lastIssue = range.split("-")[1];
+                for (Integer j = Integer.parseInt(firstIssue); j <= Integer.parseInt(lastIssue); j++) {
+                    volNumItems.add(j.toString());
+                }
+            } else {
+                volNumItems.add(range);
+            }
         }
-        
+
         volNumList.getItems().setAll(volNumItems);
     }
 

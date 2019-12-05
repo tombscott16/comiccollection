@@ -81,11 +81,35 @@ public class FXMLDocumentController implements Initializable {
 
     public void checkCharacterName(String characterName) {
         switch (characterName) {
-            case "Spider_Man":
-                comicCollection.setCharacterName("Spider-Man");
+            case "Black_Panther":
+                comicCollection.setCharacterName("Black Panther");
+                break;
+            case "Captain_America":
+                comicCollection.setCharacterName("Captain America");
+                break;
+            case "Doctor_Strange":
+                comicCollection.setCharacterName("Doctor Strange");
+                break;
+            case "Fantastic_Four":
+                comicCollection.setCharacterName("Fantastic Four");
+                break;
+            case "Green_Arrow":
+                comicCollection.setCharacterName("Green Arrow");
+                break;
+            case "Green_Lantern":
+                comicCollection.setCharacterName("Green Lantern");
                 break;
             case "Iron_Man":
                 comicCollection.setCharacterName("Iron Man");
+                break;
+            case "Justice_League":
+                comicCollection.setCharacterName("Justice League");
+                break;
+            case "Spider_Man":
+                comicCollection.setCharacterName("Spider-Man");
+                break;
+            case "X_Men":
+                comicCollection.setCharacterName("X-Men");
                 break;
             default:
                 comicCollection.setCharacterName(characterName);
